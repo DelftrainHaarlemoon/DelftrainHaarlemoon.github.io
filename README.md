@@ -1,267 +1,239 @@
-<h1 align=center>Hugo Magnolia 🌸 | <a href="https://ololiuhqui.github.io/magnolia-free-hugo-theme/en/" rel="nofollow">Demo</a></h1>
+# Beautiful Jekyll
 
-<br>
-<div align="center>
+[![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
 
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ololiuhqui/magnolia-free-hugo-theme/hugo.yaml?logo=hugo)](https://github.com/ololiuhqui/magnolia-free-hugo-theme/actions/workflows/hugo.yaml)
-[![Minimum Hugo Version](https://img.shields.io/static/v1?label=min-HUGO-version&message=>=v0.129.0&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.129.0)
-![GitHub Repo stars](https://img.shields.io/github/stars/ololiuhqui/magnolia-free-hugo-theme)
+> By [Dean Attali](https://deanattali.com) &middot; [Demo](https://beautifuljekyll.com/)
 
-</div>
+**Beautiful Jekyll** is a ready-to-use template to help you create a beautiful website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](https://beautifuljekyll.com) of what you'll get after just two minutes.  You can also look at [my personal website](https://deanattali.com) or [my consulting website](https://attalitech.com) to see it in use, or see [examples of websites](http://beautifuljekyll.com/examples) other people created using this theme.
 
-<br>
+**If you enjoy Beautiful Jekyll, please consider [supporting me](https://github.com/sponsors/daattali). You'll also gain access to office hours and more features! ❤**
 
-**A simple, customizable, multilingual Hugo theme thought for professionals and small businesses.**
+## Table of contents
 
-I decided to give my personal _thank you_ to the Hugo developers and community by making this theme available for everyone.
+- [Features](#features)
+- [Sponsors 🏆](#sponsors)
+- [**Build your website in 3 steps**](#build-your-website-in-3-steps)
+- [Plans](#plans)
+- [Add your own content](#add-your-own-content)
+- [Customizing parameters for each page](#customizing-parameters-for-each-page)
+- [Supported parameters](#supported-parameters)
+- [Featured users (success stories!)](#featured-users-success-stories)
+- [Next steps](#next-steps)
+- [Getting help](#getting-help)
+- [Credits and contributions](#contributions)
 
-This theme is actually very "hugo noob" friendly, as it provides an **example site** to be used with the latest version of the theme, the main pages are there to be used as they are, with most of the params already in the config files. you can customize the color palette and some of the pages images. This theme also aims to be _very well documented_ in order to be accessible even from a complete stranger and make your site run asap.
+# Features
 
-I strongly value the open source community as in these years i've been using many open source projects that made my life better and improved my digital freedom in many ways.
+__Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the latest features!__
 
-Freedom makes us better humans, and makes us improve our status faster and in an easier way.
+- **SIMPLE**: The primary goal of Beautiful Jekyll is to allow literally *anyone* to create a website in a few minutes.
+- **Modern**: Uses the latest best practices and technologies to achieve nearly perfect scores on Google Chrome's Audit.
+- **Mobile-first**: Designed to look great on both large-screen and small-screen (mobile) devices.
+- **Highly customizable**: Many personalization settings such as changing the background colour/image, adding a logo.
+- **Flexible usage**: Use Beautiful Jekyll directly on GitHub or via a Ruby gem - choose the best [development method](#build-your-website-in-3-steps) for you.
+- **Battle-tested**: By using Beautiful Jekyll, you'll be joining 50,000+ users enjoying this theme since 2015.
+- **SEO and social media support**: Customize how your site looks on Google and when shared on social media.
+- **Comments support**: Add comments to any page using either [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), [Staticman](https://staticman.net), [giscus](https://giscus.app), or [CommentBox](https://commentbox.io/).
+- **Tags**: Any blog post can be tagged with keywords, and an index page is automatically generated.
+- **Analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
+- **Search**: Let users easily find any page using a Search button in the navigation bar.
+- **Photos support**: Any page can have a full-width cover photo and thumbnail.
+- **RSS**: An RSS feed is automatically created, so you can even host a podcast easily with Beautiful Jekyll.
 
-**Make sure to <a href="https://github.com/ololiuhqui/magnolia-free-hugo-theme"> star this repo!</a>**
+<h2 id="sponsors">Sponsors 🏆</h2>
 
-## Features ⚡
+Developing and maintaining Beautiful Jekyll takes a lot of time and effort - thank you to anyone who helps fund this effort!
 
-I built this theme with simplicity in mind, it is small and easily customizable, responsive, modular and multilingual. But it also leaves some space to further in-depth customization since it uses **Bootstrap** and **SCSS**.
-This theme is thought to be used as a personal / business theme, it can provide a great landing page or blog for your activity!
+- [DoFollow](https://dofollow.co.uk/)
+- [Varna Sri Raman](https://about.me/varna)
 
-### 1. Responsive
+**[Become a sponsor for Beautiful Jekyll and unlock new features\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)**
 
-- The theme is fully responsive and shows perfectly on every screen size.
+# Build your website in 3 steps
 
-### 2. Modular
+There are a few different ways to build a website using Beautiful Jekyll, and this document will go through the simplest one: using a fork on GitHub. For most people (including myself!), this easy method is the recommended one.
 
-- Hide and show some elements easily from the config file.
+Even if you choose to use one of the [advanced installation methods](https://beautifuljekyll.com/getstarted/#install-steps-hard), I still suggest you read through the easy method first.
 
-### 3. Multilingual
+## The easy way (recommended!)
 
-- The default content language is english (it can be changed), but you can add as many languages as you want very easily, the theme includes an italian language example and a dropdown menù for easily switching between languages. Permalinks can be localized in each language (eg. you can have `/contacts` for english and `/contatti` for italian).
+Getting started is *literally* as easy as 1-2-3 :smile:
 
-### 4. Customizable
+Scroll down to see the steps involved, but here is a 30-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com), you'll need to sign up.
 
-These are the currently customizable sections:
+![Installation steps](https://beautifuljekyll.com/assets/img/install-steps.gif)
 
-- Landing page
-- "Services" page with arbitrary number of points
-- "Office" page with integrated google maps view for directions
-- Contacts page with FormSpree connected form and opening hours
+### 1. Fork this project
 
-### 5. SEO ready
+Click on the __*Fork*__ button at the top right corner of this page. Forking means that you're copying this entire project and all its files into your account. Do not click on the __*Create fork*__ button on the next page yet.
 
-- Every page has an easily customizable meta description and a unique meta title for better and easier indexing. Each post has the option of adding a featured image, and, if not found, `assets/img/meta-image` will be used instead as meta image for Google, Facebook and Twitter. All pages that do not have a featured image will have the `meta-image` by default (eg. homepage, office etc).
-  There is a `robots.txt` file which indicates the correct location of the sitemap index for faster indexing. There's also an option in config to block AI scrapers via robots, this will increase your website **privacy** as well as **digital resiliency**, and also could help avoid altering your analytics.
+### 2. Rename the repository to `YOURUSERNAME.github.io`
 
-### 6. Google Analytics supported
+You'll see the word "repository" used a lot in GitHub - it simply means "project". Under __*Repository name*__ you should see the name `beautiful-jekyll`, this is where you need to rename your project to `YOURUSERNAME.github.io` (replace `YOURUSERNAME` with your GitHub user name). It's important to use this exact name so that GitHub will recognize it and automatically create a website for this project.   
 
-- Insert your Google Analytics tag in the `config.toml` file and be ready to track your site performances easily.
+> Tip: If you want to use a different URL for your website, check out the [FAQ](https://beautifuljekyll.com/faq/#custom-domain)
+ 
+### 3. Customize your website settings
 
-### 7. Google Maps included
+Edit the `_config.yml` file to change any settings you want. To edit the file, first click on it to view the file, and on the next page click on the pencil icon to edit it (watch the video tutorial above if you're confused).  The settings in the file are self-explanatory and there are comments inside the file to help you understand what each setting does. Any line that begins with a hashtag (`#`) is a comment, and the other lines are actual settings. After changing the settings, click the green __*Commit changes*__ button to save these edits.
 
-- The contact page can be easily customized by adding a google maps link to get directions towards your activity location.
+> Note: In the video above, only one setting in the `_config.yml` file is edited, but you should go through the rest of the settings as well.
 
-### 8. Ready to Blog
+### 4. Congratulations! You have a website!
 
-- The theme provides some archetypes and a simple directory structure, you can publish articles/posts in more languages, set a publish date, a featured image, an expiration date and tag your posts. You can create and translate custom tags. Latest posts will appear in the homepage, every tag will have its own list page, and every post will show a list of latest related posts based on tagging. If you include titles in your posts, they will be automatically rendered in a table of contents. SEO is carefully taken care of for posts as well. **You can also disable the blog part of the theme entirely if you don't need it!**
+If you named your project correctly and made an edit to the config file, your website should be ready in a minute or two at `https://YOURUSERNAME.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so. Your website will be initialized with several sample blog posts and a couple other pages.
 
-## Quick start: how to install 📥
+## The harder way (for advanced users)
 
-1. Install hugo extended, follow [the official installation guide](https://gohugo.io/installation/). For using this theme you **DO NOT NEED** to execute `hugo new site`, as you will be cloning an example site in step 2.
+The instructions above explain how to use Beautiful Jekyll in the easiest way: by forking on GitHub. There are more [advanced installation methods](https://beautifuljekyll.com/getstarted/#install-steps-hard) that include either using GitHub Pages with remote themes, or using Ruby gems. They provide you with more control, but are only intended for advanced users.
 
-2. Get [the latest version of the example site](https://github.com/ololiuhqui/magnolia-free-hugo-theme/releases/latest). Download the archive named example-site, it will automatically come with a compatible version of the magnolia theme.
+> Note: Beautiful Jekyll was primarily designed to be used as a GitHub theme, so you will not get any support if you use this theme via Ruby gems. 
 
-3. The site configurations will be found in `config/_default`. The main configuration file is `config/_default/config.toml`, but most variables are overwritten or defined by the individual language configuration files (eg. `config/_default/languages/.en.toml`)
+# Plans
 
-4. Move to your site directory and see the website preview with `hugo serve -D`
+Beautiful Jekyll is, and always will be, free. But if you want to remove the Beautiful Jekyll ad from your website, use a Dark Mode skin, access office hours, or simply support the development efforts, [check out the different plans](https://beautifuljekyll.com/plans).
 
-## How to update ♻
+# Add your own content
 
-- Move into the theme folder `cd themes/Magnolia`
+To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file. It's much easier to write markdown than HTML, so that's the recommended approach ([here's a great tutorial](https://markdowntutorial.com/) if you need to learn markdown in 5 minutes).
 
-- Run `git checkout <version-tag>`. Choose the version tag from the [releases page](https://github.com/ololiuhqui/magnolia-free-hugo-theme/releases). e.g `git checkout v2.0.0`.
+To see an example of a markdown file, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On that page you can see some nicely formatted text (there's a word in bold, a link, a few bullet points), and if you click on the pencil icon to edit the file, you'll see the markdown code that generated the pretty text. Very easy! 
 
-Please check the releases page to make sure the new version of the theme is compatible with your current example-site release. Refer to [Semantic Versioning 2.0.0 | Semantic Versioning](https://semver.org/).
+In contrast, look at [`tags.html`](./tags.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
 
-## How to customize 🎨
+Any markdown or HTML file that you create will be available on your website under `https://<yourusername>.github.io/<pagename>`. For example, if you create a file `about.md` (or `about.html`) then it'll exist at `https://<yourusername>.github.io/about`.
 
-- Use your preferred color palette by modifying the Bootstrap variables in `assets/scss/custom-variables.scss`.
+Files you create inside the [`_posts`](./_posts) directory will be treated as blog entries. You can look at the existing files there to get an idea of how to write blog posts. Note the format of the blog post files - they must follow the naming convention of `YEAR-MONTH-DAY-title.md`. After you successfully add your own post, you can delete the existing files inside [`_posts`](./_posts) to remove the sample posts, as those are just demo posts to help you learn.
 
-- Change the config files in `/config/_default` and `/config/_default/languages` adding your own elements to the pages. You can change the page names there as well.
+# Customizing parameters for each page
 
-- Edit the homepage content in `content/<language>/_index.html`, markdown supported.
+**One last important thing**: In order to have your new pages use this template and not just be plain HTML pages, **you must add [YAML front matter](https://jekyllrb.com/docs/front-matter/) to the top of each page**:
 
-- Edit pages names, slugs and metadescriptions in `content/<language>/pages/<page>/index.html`.
-
-- Change the images of the website from the `content/<language>/pages/<page>/<image>` folders (pages and posts use [Page bundles](https://gohugo.io/content-management/page-bundles/)). The homepage is the `_index.md` right in the root language content folder. Images of any extensions can be used, but the name of the image must be the same of the one currently set up (eg. `main.*`).
-
-- Add your own favicon, background and default meta-image (the image used in SEO) in `assets/img`. These files can be of any extension but must have the same name of the ones currently in the example site assets directory.
-
-## How to manage posts ✏️
-
-### Enable/Disable Blog
-
-_Wait, you told me this theme was noob friendly, I don't wanna deal with all the blog stuff!_
-
-_I need a simple landing page and all this blog feature is something I don't care about!_
-
-**If you don't need posts you can disable the blog part of the theme entirely from within the config files and just use Magnolia as a simple landing site.**
-
-- To disable _tags only_ rendering and indexing for the entire site -> `config.toml` uncomment `#disableKinds = ['taxonomy', 'term']`.
-- To disable _post and tags_ rendering and indexing for the entire site -> `config.toml` uncomment `#disableKinds = ['taxonomy', 'term']` and `#ignoreFiles= ['posts/*']`.
-
-### Content organization
-
-The `/content` folder contains different types of content, the content organization mimicts the site structure.
 
 ```
-content
-├── en
-│   ├── _index.md
-│   ├── pages
-│   ├── posts
-│   ├── main.webp
-│   └── tags
-└── it
-    ├── _index.md
-    ├── pages
-    ├── posts
-    ├── main.webp
-    └── tags
+---
+---
 ```
 
-For each language, you will find yourself in front of the homepage `_index.md` and the image used for the homepage presentation section (`main.webp`). The other directories will contain exactly what you expect.
-
-`pages`= normal website pages (office, services etc).
-`posts`= site posts.
-`tags` = custom tags.
-
-#### Posts
-
-- Create a new post with: `hugo new --kind post-bundle content/<lang>/posts/<post-name>`. This will be its very simple structure:
+This is where you'll be able to give each page some extra parameters (such as a title, a subtitle, an image, etc - [below is a list of all parameters](#supported-parameters)). Add any parameters you want between these two dashed lines, for example:
 
 ```
-content/en/posts
-├── a-poem-about-flowers
-│   ├── images
-│   │   └── featured.jpg
-│   └── index.md
+---
+title: Contact me
+subtitle: Here you'll find all the ways to get in touch with me
+---
 ```
 
-- Edit the metadata in `index.md` and add your post content below.
+If you don't want to use any parameters on a page, you still need to use the two dashed lines. If you don't, then your file will be shown as-is without the Beautiful Jekyll template.
 
-- Add a post featured image by subsituting the `featured.webp` placeholder in `/images`. The featured image has to be called "featured" but can be of any extension. If you wish you can remove the placeholder to have a text-only post.
+You can look at the top of [`aboutme.md`](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/aboutme.md) as an example.
 
-#### Tags
+**Important takeaway: ALWAYS add the YAML front matter, which is two lines of three dashes, to EVERY page. If you have any parameters, they go between the two lines.**
 
-1. One option is to automatically create tags by adding them to posts frontmatters.
+# Supported parameters
 
-2. The second option is to create a new tag with: `hugo new --kind tag content/<lang>/tags/<tag-name>`. Creating tags this way will allow for a finer manipulation, you can translate tags here by giving the same translationKey in frontmatter in every different language. Hence having your posts sorted the same for each language and have tag pages translations available.
+Below is a list of the parameters that Beautiful Jekyll supports (any of these can be added to the YAML front matter of any page). Remember to also look in the `_config.yml` file to see additional site-wide settings. If there's a parameter that you want to apply to the entire site instead of one specific page, check out [this FAQ answer](https://beautifuljekyll.com/faq/#default-params).
 
-```
-content/en/tags
-├── flowers
-│   └── _index.md
-```
+## Main parameters
 
-For more on content organization refefer to [Content organization | Hugo](https://gohugo.io/content-management/organization/).
+These are the basic YAML parameters that you are most likely to use on most pages.
 
-## Add new languages 🚩
+Parameter   | Description
+----------- | -----------
+title       | Page or blog post title
+subtitle    | Short description of page or blog post that goes under the title
+tags        | List of tags to categorize the post. Separate the tags with commas and place them inside square brackets. Example: `[personal, analysis, finance]`
+cover-img   | Include a large full-width image at the top of the page. You can either provide the path to a single image (eg. `"/path/to/img"`) , or a list of images to cycle through (eg. `["/path/img1", "/path/img2"]`). If you want to add a caption to an image, then you must use the list notation (use `[]` even if you have only one image), and each image should be provided as `"/path/to/img" : "Caption of image"`.
+thumbnail-img | For blog posts, if you want to add a thumbnail that will show up in the feed, use `thumbnail-img: /path/to/image`. If no thumbnail is provided, then `cover-img` will be used as the thumbnail. You can use `thumbnail-img: ""` to disable a thumbnail.
+comments    | If you want do add comments to a specific page, use `comments: true`. Comments only work if you enable one of the comments providers (Facebook, disqus, staticman, utterances, giscus, CommentBox) in `_config.yml` file. Comments are automatically enabled on blog posts but not on other pages; to turn comments off for a specific post, use `comments: false`.
+mathjax     | If you want to use LaTeX formulas, you need to enable MathJax. Note that in MathJax you need to use `$$` and `\\(` to start and end expressions
 
-1. Head to `config/_default/languages`.
-2. Duplicate one of the language files, change the language tag, name of the file (en, it, fr etc): this should be compliant with [RFC 5646](https://gohugo.io/content-management/multilingual/). Use the [RFC 5646 Language Tags List](https://gist.github.com/msikma/8912e62ed866778ff8cd) for a quicker setup.
-3. Translate the variables values inside the `.toml` file accordingly to the language.
-4. In the `/content` directory, duplicate one of the language folders and change the name accordingly to your new language as in step 2.
-5. For each of the `.html` file in `/content/pages`, you can change `title` and `slug` freely. `translationKey` should remain untouched or should be changed in every language page file. I strongly suggest you to translate the SEO here as well.
-6. For each of the `.md` files in `content/posts/<my-post>` translate the content and the frontmatter values you need (eg. _summary_).
+## Parameters for SEO and social media sharing
 
-## Custom 404 page
+These parameters let you control what information shows up when a page is shown in a search engine (such as Google) or gets shared on social media (such as Twitter/Facebook).
 
-To add the custom 404 page and make it work on github pages, you will have to add it manually when building the site executing `hugo`. This is because github pages looks for a 404 template in the root directory of the project, you can therefore only have one single 404 page for all the languages. To create a symlink to the english 404 version, which will then be used as default 404 once hosting, after running `hugo` run `ln -s public/en/404/index.html public/404.html`.
+Parameter   | Description
+----------- | -----------
+share-title | A title for the page. If not provided, then `title` will be used, and if that's missing then the site title (from `_config.yml`) is used.
+share-description | A brief description of the page. If not provided, then `subtitle` will be used, and if that's missing then an excerpt from the page content is used.
+share-img   | The image to show. If not provided, then `cover-img` or `thumbnail-img` will be used if one of them is provided.
 
-## Remunerate my time and energy 💫
+## Less commonly used parameters
 
-![Liberapay receiving](https://img.shields.io/liberapay/receives/ololiuhqui)
-![GitHub Sponsors](https://img.shields.io/github/sponsors/ololiuhqui)
+These are parameters that you may not use often, but can come in handy sometimes.
 
-Designing this theme and making it available for you took a lot of time and effort.
+Parameter   | Description
+----------- | -----------
+author      | Specify the author of a blog post (useful if a website has multiple authors).
+readtime    | If you want a post to show how many minutes it will take to read it, use `readtime: true`.
+show-avatar | If you have an avatar configured in the `_config.yml` but you want to turn it off on a specific page, use `show-avatar: false`.
+social-share | By default, every blog post has buttons to share the page on social media. If you want to turn this feature off, use `social-share: false`.
+nav-short   | By default, the navigation bar gets shorter after scrolling down the page. If you want the navigation bar to always be short on a certain page, use `nav-short: true`
+gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
+gh-badge  | Select which GitHub buttons to display. Available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
+last-updated | If you want to show that a blog post was updated after it was originally released, you can specify an "Updated on" date.
+layout      | What type of page this is (default is `post` for blog posts and `page` for other pages). See _Page types_ section below for more information.
 
-The MIT license means that you are completely free to do whatevere you want with this theme, even [make money from it!](https://opensource.org/license/MIT) With the only obligation to include the attribution!
+## Advanced parameters
 
-If you wish you can support me in several ways:
+These are advanced parameters that are only useful for people who need very fine control over their website.
 
-### Single donation:
+Parameter   | Description
+----------- | -----------
+footer-extra | If you want to include extra content below the social media icons in the footer, create an HTML file in the `_includes/` folder (for example `_includes/myinfo.html`) and set `footer-extra` to the name of the file (for example `footer-extra: myinfo.html`). Accepts a single file or a list of files.
+before-content | Similar to `footer-extra`, but used for including HTML before the main content of the page (below the title).
+after-content | Similar to `footer-extra`, but used for including HTML after the main content of the page (above the footer).
+head-extra   | Similar to `footer-extra`, but used if you have any HTML code that needs to be included in the `<head>` tag of the page.
+language    | HTML language code to be set on the page's &lt;html&gt; element.
+full-width  | By default, page content is constrained to a standard width. Use `full-width: true` to allow the content to span the entire width of the window.
+js          | List of local JavaScript files to include in the page (eg. `/assets/js/mypage.js`)
+ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`). External JavaScript files that support [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) can be specified using the `href` and `sri` parameters eg.<br/>`href: "//code.jquery.com/jquery-3.1.1.min.js"`<br/>`sri: "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="`
+css         | List of local CSS files to include in the page
+ext-css      | List of external CSS files to include in the page. External CSS files using SRI (see `ext-js` parameter) are also supported.
 
-<details><summary><b> BuyMeACoffee </b></summary>
+## Page types
 
-<a href="https://www.buymeacoffee.com/ololiuhqui" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: auto ;width: 150px;" ></a>
+- **post** - To write a blog post, add a markdown or HTML file in the `_posts` folder. As long as you give it YAML front matter (the two lines of three dashes), it will automatically be rendered like a blog post. Look at the existing blog post files to see examples of how to use YAML parameters in blog posts.
+- **page** - Any page outside the `_posts` folder that uses YAML front matter will have a very similar style to blog posts.
+- **home** - The home layout is meant to act as the homepage of your blog posts - it will display all your blog posts, sorted from newest to oldest. A file using the `home` layout must be named `index.html` (not `index.md` or anything else!).
+- **minimal** - If you want to create a page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal` to the YAML front matter.
+- If you want to completely bypass the template engine and just write your own HTML page, simply omit the YAML front matter. Only do this if you know how to write HTML!
 
-</details>
-<br>
-<details><summary><b> Bitcoin (BTC) </b></summary>
+# Featured users (success stories!)
 
-```
-bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln
-```
+Visit the [Official website](http://beautifuljekyll.com/examples) to see sample websites using Beautiful Jekyll.
 
-![btc-bc1q26f4gscc5ksujdx6wzxfnlqeqt02p3sjcqwvln](https://raw.githubusercontent.com/ololiuhqui/magnolia-free-hugo-theme/main/images/.readme_images/bitcoin-qr.png)
+If you'd like to showcase yourself and join this list, [upgrading to the Individual plan](https://github.com/sponsors/daattali/sponsorships?&tier_id=7362) will give you that publicity plus some other rewards!
 
-</details>
+# Next steps
 
-### Recurring donations:
+Congratulations on making it this far! You now have all the tools to easily build a beautiful website for free. 
 
-<details><summary><b> LiberaPay </b></summary>
+- After you get comfortable with the basics of writing in markdown, I suggest taking a look at this [sample post](https://beautifuljekyll.com/2020-02-28-sample-markdown/) and [the code that created it](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about markdown.
 
-<a href="https://liberapay.com/ololiuhqui/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+- I **highly recommend** going over the [*Frequently Asked Questions*](https://beautifuljekyll.com/faq/) to find out answers to questions you may not even know you have. Every few months I suggest checking the [*What's New?*](https://beautifuljekyll.com/updates/) page to see if there are new features, and learn [how to update your site to the newest version](https://beautifuljekyll.com/faq/#updating) when it's time.
 
-</details>
+- You can also check out the [advanced installation methods](https://beautifuljekyll.com/getstarted/#install-steps-hard) that give you a little more control but are harder to use. Keep in mind that Beautiful Jekyll was primarily designed to be used as a GitHub theme, so you will not get any support if you choose one of the Ruby installation methods. 
 
-<details><summary><b> GitHub Sponsors </b></summary>
-<a href="https://github.com/ololiuhqui/magnolia-free-hugo-theme">Github Repo</a>
+- Remember that Beautiful Jekyll is built on top of Jekyll. This means that reading through the [Jekyll documentation](https://jekyllrb.com/) will introduce you to many more features that you might find useful!
 
-</details>
+# Getting help
 
-## Contribute 🛠
+Visit the [FAQ page](https://beautifuljekyll.com/faq) for answers to commonly asked questions.
 
-**First of all, PRs are welcome here!**
+**If you choose to [become a sponsor](https://beautifuljekyll.com/plans/), you'll have access to my [office hours](https://beautifuljekyll.com/officehours/) where you can ask for help.** You can also use the [Discussions](https://github.com/daattali/beautiful-jekyll/discussions) area to try and get help from the community.
 
-### Notes on how this repo works
+Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web skills, so it's impossible to answer all the questions that may arise. For any question that's not specifically related to Beautiful Jekyll and is more about Jekyll or web development in general, the answer can often be found on Google, in the [Jekyll documentation](https://jekyllrb.com/), or on the [Jekyll support forum](https://talk.jekyllrb.com/).
 
-This repo includes two main branches: **main** and **exampleSite**.
+# Contributions
 
-**main** is an **exampleSite** submodule.
+Thank you to [all past contributors](https://github.com/daattali/beautiful-jekyll/graphs/contributors). If you find any problems or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.
 
-The _exampleSite_ directory will _not_ be shown in **main** branch.
-If you clone the **main** branch you will therefore be able to modify the theme and its content only, if you clone the **exampleSite** branch you will be able to modify the exampleSite content only.
-As an alternative you can also clone the **exampleSite** with the `recurse-submodules` option, that will also add the theme **main** as submodule, making it available for changes. To clone the repo and submodule at latest commit and main branch run `git clone -b exampleSite --recurse-submodules https://github.com/ololiuhqui/magnolia-free-hugo-theme`, move to the just cloned folder and `git submodule update --remote --merge` to make sure you're working with the latest theme commit.
+You can also contribute by becoming an [official sponsor](https://github.com/sponsors/daattali/sponsorships?tier_id=39856) to help keep Beautiful Jekyll well-maintained!
 
-This will set you up to work on a detatched HEAD with the latest commit on the theme and example site, checkout to your own branches and make pull requests!
+# Credits
 
-#### Content:
+This template was not made *entirely* from scratch. I'd like to give special thanks to [Jekyll Now](https://github.com/barryclark/jekyll-now) and [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from whom I've taken several ideas initially.
 
-| main 🌲     | exampleSite 🌲            |
-| ----------- | ------------------------- |
-| main branch | exampleSite branch        |
-|             | theme as submodule (main) |
+I'd also like to thank [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
 
-### Things that should be probably added to this theme
-
-#### Add a RSS feed template for posts
-
-This would be wonderful for setting up automations that use RSS feed as source like Zapier or FTTT.
-
-#### Add proper Bootstrap theming
-
-Only some bootstrap variables are reassigned, leaving a lot of them to defaults. Properly assigning all the most important variables would make building, modifying and styling the theme much easier with less manual SCSS/CSS needed.
-
-I included the `scss/custom-variable.scss` file to overwrite the default variables, this would need to be updated as well with the variables that get styled in the theme, in order to give the theme user the ability to easily customize the site appeareance.
-
-Refer to:
-
-- [Customize · Bootstrap v5.0](https://getbootstrap.com/docs/5.0/customize/overview/).
-- [Example bootstrap themes + easily style with UI](https://bootstrap.build/app/project/UroRGaxfXxdg)
-
-### Ensure accessibility
-
-The website still lacks a focus on accessibility, this needs to be addressed.
